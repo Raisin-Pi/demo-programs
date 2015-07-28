@@ -1,9 +1,9 @@
 # Licence
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+Sauf si expressément spécifié, tout le contenu de ce répertoire est couvert sous la licence suivante :
 
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+![Licence Creative Commons](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-***Demo Programs*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+***Demo Programs*** de la [Fondation Raspberry Pi](http://raspberrypi.org) est licencié sous  [Licence Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/demo-programs
+D'après le travail réalisé sous https://github.com/raspberrypilearning/demo-programs

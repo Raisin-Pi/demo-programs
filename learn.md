@@ -1,6 +1,6 @@
-By following this resource you will learn:
+En déroulant cette ressource, vous allez apprendre :
 
-- How to use the command line interface
-- How to navigate the file system
-- How to compile code
-- How to run code
+- Comment utiliser la ligne de commande
+- Comment naviguer dans le système de fichiers
+- Comment compiler du code source
+- Comment exécuter du code

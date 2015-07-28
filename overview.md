@@ -1,4 +1,4 @@
-How about running some demo programs that showcase what the Pi is capable of?  Awesome graphics, anyone?
+Pourquoi pas lancer des programs de démo qui montrent les capacités du Pi ? Des images bluffantes, ça vous dit ?
 
-Raspbian comes with a range of demo programs which you can just compile and run.  They range from simple *hello world* text output, to full 1080p HD video playback, 3D spinning teapots and real-time animating fractal patterns.
-These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
+Raspbian est livré avec un ensemble de programs "démo" que vous pouvez facilement compiler et executer. Ces programs partent d'un simple affichage texte de *hello world*, jusqu'à jouer de la vidéo "full HD" en 1080p, des théières tournants en 3D, et des motifs fractals, animés en temps réel. 
+C'est une bonne façon d'apprécier ce dont le Pi est capable, et en même temps de pouvoir se familiariser avec la navigation du système et le lancement de programs en ligne de commande.

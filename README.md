@@ -1,54 +1,54 @@
-# Raspberry Pi demo programs
+# Raspberry Pi programs de démonstration
 
-How to run the hello_pi demo programs on Raspbian
+Comment démarrer les programs démo "hello_pi" sous Raspbian
 
 ![image](./images/cover.jpg "Raspberry Pi")
 
-## So you’ve got a Raspberry Pi. Now what?
+## Alors vous avez un Raspberry Pi. Et quoi maintentant ?
 
-How about running some demo programs that showcase what the Pi is capable of?  Awesome graphics, anyone?
-Raspbian comes with a range of demo programs which you can just compile and run.  They range from simple "hello world" text output, to full 1080p HD video playback, 3D spinning teapots, and real-time animating fractal patterns.
-These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
+Pourquoi pas lancer des programs de démo qui montrent les capacités du Pi ?  Des images bluffantes, ça vous dit ?
+Raspbian est livré avec un ensemble de programs "démo" que vous pouvez facilement compiler et exécuter.  Ces programs partent d'un simple affichage de texte "hello world", jusqu'à jouer de la vidéo "full HD" en 1080p, des théières tournants en 3D, et des motifs fractals, animés en temps réel.
+C'est une bonne façon d'apprécier ce dont le Pi est capable, et en même temps de pouvoir se familiariser avec la navigation du système et le lancement de programs en ligne de commande.
 
-## Requirements
+## Prérequis
 
-As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need:
+Vous aurez besoin de :
 
-### Hardware
+### Matériel
 
-- Raspberry Pi
-- Micro USB power adapter
-- An SD Card with Raspbian already set up through NOOBS
-- USB keyboard
-- HDMI cable
-- A monitor or TV
+- un Raspberry Pi
+- un Chargeur/alimentation Micro USB
+- une carte SD avec Raspbian installé via NOOBS
+- un clavier USB
+- un câble HDMI
+- un écran ou télé
 
-### Time
+### Durée
 
 - 10 minutes
 
-## Steps
+## Etapes
 
-1. Setting Up your Pi
-1. Oh no! A command line interface!
+1. L'installation de votre Pi
+1. Non, pas ça ! La ligne de commande !
 1. Hello world
-1. Hello video
+1. Hello vidéo
 1. Hello triangle
 1. Hello triangle 2
-1. Hello teapot
+1. Hello théière
 1. Hello audio
-1. Other demos
+1. D'autres demos
 
-## Worksheet
+## Feuille d'activités
 
-- [The worksheet](worksheet.md)
+- [La feuille d'activités](worksheet.md)
 
 ## Licence
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+Sauf si expressément spécifié, tout le contenu de ce répertoire est couvert sous la licence suivante :
 
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+![Licence Creative Commons](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-***Demo Programs*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+***Demo Programs*** de la [Fondation Raspberry Pi](http://raspberrypi.org) est licencié sous  [Licence Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/demo-programs
+D'après le travail réalisé sous https://github.com/raspberrypilearning/demo-programs
