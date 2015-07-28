@@ -10,48 +10,48 @@ Faire démarrer votre Raspberry Pi et vous allez vous trouver à l'invite de com
 
 Le texte ci-dessus est l'invite de commande. Essayez de ne pas en avoir peur ! A CLI (l'interface en ligne de commande) est en réalité un moyen très rapide et efficace pour faire fonctionner un ordinateur.
 
-To start, navigate to the `hello_pi` folder where all the demos are stored. Enter the command below to do this. **TIP**: You can use the `TAB` key for auto-complete as you enter commands.
+Pour commencer, naviguez jusqu'au dossier `hello_pi`, là où toutes les démos sont stockées. Entrez la commande ci-dessous pour pouvoir y arriver. **ASTUCE**: Vous pouvez utiliser la touche `TAB` pour auto-completer les commandes tout en saissisant.
 
 `cd /opt/vc/src/hello_pi`
 
-The command prompt should now look like this. The blue part shows where you are in the file system of the Pi.
+L'invite de commande devrait ressembler à ceci. La partie bleu indique où vous vous trouvez dans le système de fichiers du Pi.
 
 `pi@raspberrypi /opt/vc/src/hello_pi $ _`
 
-If you enter `ls` and press `enter`, you’ll see a list of folders. There is one for each demo. Before you can run them though, they must be compiled. Don’t worry if you don’t understand why you need to do this; just go along with it for now, and we'll learn more about it later on.
+Si vous entrez `ls` et vous appuyez sur `Entrée`, vous allez voir la liste des dossiers. Il y en a un chaque démo. Cependant, avant de pouvoir les éxecuter,  il faudrait les compiler d'abord. Ne vous inquitétez pas si vous ne comprenez pas pourquoi on a besoin de faire ça; l suffit de suivre les indications pour l'instant, et nous allons apprendre plus à ce sujet d'ici peu.
 
-There is a small shell script supplied in the `hello_pi` folder called `rebuild.sh`, which will do the compile for you. Enter the following command to run it. Ignore the gobbledygook for now!
+Il y a un petit script de l'interpréteur de commandes ("shell script") fourni dans le dossier `hello_pi` sous le nom `rebuild.sh`, ce qui va dérouler la compilation pour vous. Entrez la commande suivante pour le lancer. Ignorez le "blahblah" qui s'affiche pour l'instant !
 
 `./rebuild.sh`
 
-A lot of text will scroll up the screen now, but for this exercise you can ignore it. It is just the output of the compiler as it works through the demo code. Wait for the command prompt to return before you continue.
+Beaucoup de texte va désormais défiler à l'écran, mais pour cet exercice vous pouvez l'ignorer. Il s'agit simplement de la sortie du compilateur pendant qu'il traite le code démo. Attendez le retour de l'invite de commande avant de pouvoir continuer.
 
-Now we’re ready to run some demos.
+Maintenant, nous sommes prêts à lancer des démos.
 
 ## Hello world
 
-First, let's do a quick test that will ensure the previous compilation step worked correctly. This rather boring program will only display the text `Hello world!`, but if it works correctly then we know all the other demos should work too.
+D'abord, nous allons faire un test rapide afin de s'assurer que l'étape précédente de compilation s'est déroulé avec succès. Ce programme, pas super intéressant, va simplement afficher le texte `Hello world!`, mais si ça fonctionne correctement on sait que toutes les autres démos sont à priori opérationnelles aussi.
 
-Enter the following commands to go inside the `hello_world` folder and list the files.
+Entrez les commandes suivantes pour descendre dans le dossier `hello_world` et afficher la liste des fichiers.
 
 ```
 cd hello_world
 ls
 ```
 
-You’ll notice the `.bin` file is shown in green. This is because it is an executable file. This means this is the file we run to launch the program.
+Vous pouvez remarquer que le fichier `.bin` est affiché en vert. C'est parce qu'il s'agit d'un fichier éxecutable. Ca veu dire que c'est le fichier que l'on utilise pour lancer le programme.
 
-Use the following command to run the demo. You need the `./` to specify the current directory, otherwise the Linux system folders will be searched for the filename you type.
+Utilisez la commande suivante pour éxecuter la démo. Vous avez besoin du `./` pour spécifier le dossier actuel, sinon tous les dossiers du système Linux vont être scrutés pour le nom du fichier que vous avez entré.
 
 `./hello_world.bin`
 
-## Hello video
+## Hello vidéo
 
-This will play a 15 second long, full HD 1080p video clip with no sound. The intention here is to demonstrate video decode and playback capability. You’ll see that it's very smooth!
+Ceci va jouer un clip vidéo de 15s en "Full HD" 1080p sans le son. L'objectif est de montrer les capactiés de décodage et lecture de vidéo. Vous allez voir comme c'est fluide !
 
 ![image](images/bbb.jpg "Big Buck Bunny")
 
-Enter the following commands to navigate to the `hello_video` folder and list the files.
+Entrez les commandes suivantes afin de naviguer jusqu'au dossier `hello_video` et lister son contenu.
 
 ```
 cd ..
@@ -59,17 +59,17 @@ cd hello_video
 ls
 ```
 
-You’ll notice the `.bin` file again. This demo needs to be told what video clip to play when we run it though, so this must be the `test.h264` file (h264 is a type of video codec).
+Vous pouvez remarquer le fichier `.bin` de nouveau. On doit indiquer à cette démo le clip vidéo à lire au moment de l'éxection, donc ça doit être le fichier `test.h264` (h264 est un type de codec vidéo).
 
-You'll need the `./` to specify the current directory again.
+Vous aurez besoin du `./` pour spécifier le répertoire actuel de nouveau.
 
 `./hello_video.bin test.h264`
 
 ## Hello triangle
 
-This displays a spinning cube with different images on each side. This is intended to demonstrate Open GL ES rendering (an open-source programming library for doing 3D graphics).
+Ceci affiche un cube qui tourne avec des images differentes sur chaque face. L'objectif est de montrer le rendement en Open GL ES (une bibliothèque de programmation open-source pour des graphiques en 3D).
 
-Enter the following commands to navigate to the `hello_triangle` folder and list its contents.
+Entrez la commande suivante pour naviguer jusqu'au dossier `hello_triangle` et lister le son contenu.
 
 ```
 cd ..
@@ -77,15 +77,15 @@ cd hello_triangle
 ls
 ```
 
-You’ll again see that one of the files is green. This is the executable file. This demo doesn’t need any video input files like the previous one, so you can just go ahead and run the `.bin` file.
+Vous allez voir de nouveau qu'un des fichiers est affiché en vert. Celui-ci est le fichier exéctutable. Cette démo n'a pas besoin d'entrer un fichier vidéo comme dans l'exemple précédent, donc vous pouvez simplement lancer le fichier `.bin`.
 
 `./hello_triangle.bin`
 
-The demo will run forever until you decide to quit. To exit the demo press `Ctrl – C`.
+Cette démo continuera à tourner tant que vous n'aurez pas dit d'arreter. Pour quitter la démo appuyez sur `Ctrl – C`.
 
 ## Hello triangle 2
 
-This one displays two superimposed fractals, one on top of the other. You can move the mouse to change the shape of the fractal in real time. This is also intended to demonstrate Open GL ES rendering. Some of you may recognise the Mandelbrot fractal.
+Celui-ci affiche deux motifs factals super-imposés, l'un sur l'autre. Vous pouvez bouger la souris afin de changer la forme de fractale en temps réel. L'objectif est également de montrer le rendement en Open GL ES. Certains parmi vous peuvent reconnaître la fractale Mandelbrot.
 
 ![image](images/mandelbrot.jpg "Mandelbrot")
 
@@ -95,15 +95,15 @@ cd hello_triangle2
 ls
 ```
 
-Notice the green `.bin` file? Okay, run it!
+A noter le fichier en vert `.bin` ? Ok, lancez-le !
 
 `./hello_triangle2.bin`
 
-Now move the mouse around, and you’ll see the fractal changing. See if you can get it to form a perfect circle. It’s a little tricky, but it can be done. To exit the demo press `Ctrl – C`.
+Maintenant fait bouger la souris, et vous allez voir la fractale se transformer. Voir si vous pouvez la transformer en cercle parfait. C'est un challenge, mais c'est possible. Pour quitter la démo appuyez sur `Ctrl – C`.
 
-## Hello teapot
+## Hello théière
 
-This displays a spinning teapot with the video clip from `hello_video` texture-mapped onto its surface. Impressive! You may recognise the teapot model if you’re familiar with a piece of software called Blender. This demonstrates Open GL ES rendering and video decode/playback at the same time.
+Ceci affiche un théière qui tourne avec la texture du clip vidéo de `hello_video` mappée sur sa surface. Impressionnant ! Peut-être vous reconnaissez le modèle théière si vous connaissez déjà un logiciel qui s'appelle Blender. Ceci montre le rendement Open GL ES ainsi que le décodage/lecture vidéo en simultané.
 
 ![image](images/teapot.jpg "Tea Pot")
 
@@ -113,11 +113,11 @@ cd hello_teapot
 ls
 ```
 
-Notice the green `.bin` file? Okay, run it!
+A noter le fichier en vert `.bin` ? Ok, lancez-le !
 
 `./hello_teapot.bin`
 
-You may receive the following error when you try to run this demo:
+C'est possible que vous recevez l'erreur suivante quand vous essayez de lancer cette démo :
 
 ```
 Note: ensure you have sufficient gpu_mem configured
@@ -125,35 +125,35 @@ eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x3
 eglCreateImageKHR failed.
 ```
 
-Don’t worry though: if you see this error, you just need to alter one configuration setting to make it work.
+Ne vous inquietez pas si c'est le cas : si vous voyez cette erreur, il suffit de modifier un paramètre pour la faire fonctionner.
 
-The error means the GPU (graphics processing unit) does not have enough memory to run the demo. It’s the GPU that does all the heavy lifting when drawing 3D graphics to the screen (a bit like the graphics card in a gaming PC). The Raspberry Pi shares its memory/RAM between the CPU and GPU, and by default is configured to only give 64 MB of RAM to the GPU. If we increase this to 128, that should fix the problem.
+Cette erreur veut dire que la GPU (processeur graphique) n'a pas suffisamment de mémoire attribuée pour exécuter la démo. C'est la GPU qui prend tout la lourde charge quand les graphiques 3D sont affichés à l'écran (un peu comme une carte graphique dans un PC de joueur). Le Raspberry Pi partage sa mémoire/RAM entre la CPU (processeur centrale) et la GPU (processeur graphique), et par défaut il est configuré de telle sorte que seuls 64 Mo de RAM sont dédiés à la GPU. Si on augmente cette valeur à 128, ça devrait régler le problème.
 
-To do that, you'll need to enter the following command:
+Afin de changer ce paramètre, vous devrez entrer la commande suivante :
 
 `sudo raspi-config`
 
-This will open up a menu on a blue background. Perform the following actions:
+Un menu à fond bleu va s'ouvrir. Déroulez les actions suivantes :
 
-- Go to Advanced Options.
-- Go to Memory Split.
-- Delete `64` and enter `128` instead. Press `enter`.
-- Go down to Finish.
-- Click Yes to reboot.
+- Allez dans Advanced Options.
+- Allez dans Memory Split.
+- Supprimez `64` et entrez `128` à la place. Appuyez sur `Entrée`.
+- Descendre jusqu'à Finish.
+- Cliquez sur Yes pour redemarrer.
 
-After you have logged back in, enter the following command to get back to the `hello_teapot` demo:
+Après s'être connecté de nouveau, entrez la commande suivante pour retourner à la démo `hello_teapot` :
 
 `cd /opt/vc/src/hello_pi/hello_teapot`
 
-Now try and run it again, and you should find it will work.
+Maintenant essayez de la lancer de nouveau, et vous devrez trouver désormais que ça marche.
 
 `./hello_teapot.bin`
 
-The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
+Cette démo continuera à tourner tant que vous n'aurez pas dit d'arreter. Pour quitter la démo appuyez sur `Ctrl – C`.
 
 ## Hello audio
 
-This demo just demonstrates audio output. It plays a sine wave, which makes a kind of WOO WOO WOO sound.
+Cette démo montre le fonctionnement de la sortie audio. Elle joue une onde sinusoïdale, qui fait un son comme WOO WOO WOO.
 
 ```
 cd ..
@@ -161,17 +161,17 @@ cd hello_audio
 ls
 ```
 
-Notice the green `.bin` file? Run it. Getting the hang of this now?
+A noter le fichier en vert `.bin` ? Lancez-le ! Vous commencez à vous debrouiller maintenant ?
 
 `./hello_audio.bin`
 
-This will play the sound over the headphone jack on the Pi. If you’re using a HDMI monitor, you can make it output over HDMI by adding a `1` to the command.
+Ca va jouer le son via la sortie "jack" du Pi. Si vous utiliser un écran HDMI, vous pouvez forcer la sortie via HDMI en ajoutant `1` à la commande.
 
 `./hello_audio.bin 1`
 
-The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
+Cette démo continuera à tourner tant que vous n'aurez pas dit d'arreter. Pour quitter la démo appuyez sur `Ctrl – C`.
 
-## What next?
+## Prochaine étape ?
 
-- By now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  
-- Try some of the other demos on your own. The `hello_videocube` one is a good place to start.
+- A ce stade vous commencez certainement à être à l'aise avec la navigation montant jusqu'au dossier parent `hello_pi` (via la commande `cd ..`) et puis descendant dans un des dossiers démo (en utilisant la commande `cd hello_quelquechose`).  
+- Tentez de lancer certaines des autres démos de façon autonome. Celle de `hello_videocube` est un excellent point de départ.

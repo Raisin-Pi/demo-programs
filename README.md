@@ -1,14 +1,14 @@
 # Programmes de démonstration Raspberry Pi
 
-Comment démarrer les programs démo "hello_pi" sous Raspbian
+Comment démarrer les programmes démo "hello_pi" sous Raspbian
 
 ![image](./images/cover.jpg "Raspberry Pi")
 
 ## Alors vous avez un Raspberry Pi. Et quoi maintentant ?
 
-Pourquoi pas lancer des programs de démo qui montrent les capacités du Pi ?  Des images bluffantes, ça vous dit ?
-Raspbian est livré avec un ensemble de programs "démo" que vous pouvez facilement compiler et exécuter.  Ces programs partent d'un simple affichage de texte "hello world", jusqu'à jouer de la vidéo "full HD" en 1080p, des théières tournants en 3D, et des motifs fractals, animés en temps réel.
-C'est une bonne façon d'apprécier ce dont le Pi est capable, et en même temps de pouvoir se familiariser avec la navigation du système et le lancement de programs en ligne de commande.
+Pourquoi pas lancer des programmes de démo qui montrent les capacités du Pi ?  Des images bluffantes, ça vous dit ?
+Raspbian est livré avec un ensemble de programmes "démo" que vous pouvez facilement compiler et exécuter.  Ces programmes partent d'un simple affichage de texte "hello world", jusqu'à jouer de la vidéo "full HD" en 1080p, des théières tournants en 3D, et des motifs fractals, animés en temps réel.
+C'est une bonne façon d'apprécier ce dont le Pi est capable, et en même temps de pouvoir se familiariser avec la navigation du système et le lancement de programmes en ligne de commande.
 
 ## Prérequis
 
