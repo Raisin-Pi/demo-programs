@@ -1,14 +1,14 @@
-# Demo Programs
+# Programmes Démo
 
-Raspbian comes with a range of demo programs which you can just compile and run. They range from simple *hello world* text output, to full 1080p HD video playback, 3D spinning teapots and real-time animating fractal patterns. These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
+Raspbian est livré avec un ensemble de programs "démo" que vous pouvez facilement compiler et exécuter.  Ces programs partent d'un simple affichage de texte *hello world*, jusqu'à jouer de la vidéo "full HD" en 1080p, des théières tournants en 3D, et des motifs fractals, animés en temps réel. C'est une bonne façon d'apprécier ce dont le Pi est capable, et en même temps de pouvoir se familiariser avec la navigation du système et le lancement de programs en ligne de commande.
 
-## Oh no! A command line interface!
+## Non, pas ça ! La ligne de commande !
 
-Boot up your Raspberry Pi and you will find yourself at the prompt below. If you have configured your Pi to automatically go into the desktop interface, use the `start` button to log out of the desktop.
+Faire démarrer votre Raspberry Pi et vous allez vous trouver à l'invite de commande ci-dessous. Si vous avez paramétré votre Pi de charger automatiquement l'interface de bureau graphique, utilisez le bouton "démarrer" pour se déconnecter du bureau.
 
 `pi@raspberrypi ~ $ _`
 
-The text above is the command prompt. Try not to be afraid of it!  A CLI (command line interface) is actually a very quick and efficient way to use a computer.
+Le texte ci-dessus est l'invite de commande. Essayez de ne pas en avoir peur ! A CLI (l'interface en ligne de commande) est en réalité un moyen très rapide et efficace pour faire fonctionner un ordinateur.
 
 To start, navigate to the `hello_pi` folder where all the demos are stored. Enter the command below to do this. **TIP**: You can use the `TAB` key for auto-complete as you enter commands.
 

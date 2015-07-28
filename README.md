@@ -1,4 +1,4 @@
-# Raspberry Pi programs de démonstration
+# Programmes de démonstration Raspberry Pi
 
 Comment démarrer les programs démo "hello_pi" sous Raspbian
 
